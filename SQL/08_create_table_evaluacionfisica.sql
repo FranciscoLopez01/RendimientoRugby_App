@@ -1,0 +1,10 @@
+USE RendimientoRugby;
+CREATE TABLE EVALUACIONFISICA (
+    IDEvaluacion BIGINT PRIMARY KEY,
+    IDJugador BIGINT NOT NULL,
+    Fecha DATE NOT NULL,
+    Evaluador BIGINT NOT NULL,
+    Detalles VARCHAR(255),
+    FOREIGN KEY (IDJugador) REFERENCES JUGADOR(IDJugador),
+    FOREIGN KEY (Evaluador) REFERENCES USUARIO(IDUsuario)
+);

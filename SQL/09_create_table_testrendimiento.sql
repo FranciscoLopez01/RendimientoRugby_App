@@ -1,0 +1,8 @@
+USE RendimientoRugby;
+CREATE TABLE TESTRENDIMIENTO (
+    IDTest BIGINT PRIMARY KEY,
+    IDEvaluacion BIGINT NOT NULL,
+    TipoTest VARCHAR(100),
+    Resultado VARCHAR(100),
+    FOREIGN KEY (IDEvaluacion) REFERENCES EVALUACIONFISICA(IDEvaluacion)
+);
