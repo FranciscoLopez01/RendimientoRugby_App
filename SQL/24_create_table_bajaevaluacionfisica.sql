@@ -1,0 +1,10 @@
+CREATE TABLE AUDITORIA_BAJA_EVALUACIONFISICA (
+    IDAuditoria BIGINT PRIMARY KEY AUTO_INCREMENT,
+    IDEvaluacion BIGINT,
+    IDJugador BIGINT,
+    Fecha DATE,
+    Evaluador BIGINT,
+    Detalles VARCHAR(255),
+    FechaEliminacion DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UsuarioElimino VARCHAR(100)
+);
