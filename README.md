@@ -22,7 +22,12 @@ RendimientoRugby_App/
 - **Opcional:** MongoDB para evaluaciones en formato documental
 
 ---
+Implementación de Trigger y Procedimiento de Reporte
 
+Se creó una tabla de auditoría (AUDITORIA_BAJA_EVALUACIONFISICA) y un trigger asociado que registra automáticamente cada vez que se elimina una evaluación física, conservando los datos eliminados y el usuario que ejecutó la acción.
+
+Se implementó el procedimiento almacenado SP_ReporteEvaluacionesFisicasPorJugador, que permite consultar las evaluaciones físicas de un jugador determinado y filtrar por rango de fechas.
+---
 ## 🗃️ Base de datos
 
 La base se encuentra dividida en scripts `.sql` dentro de la carpeta `/SQL/`, y contiene:
